@@ -6,6 +6,35 @@ Demonstrar estados, transições e ações usando um DFA que guia o usuário da 
 
 ---
 
+## Diagrama de Estados (Mermaid)
+```mermaid
+stateDiagram-v2
+    [*] --> SAUDACAO
+    SAUDACAO --> ESCOLHER_CATEGORIA: iniciar atendimento
+    
+    ESCOLHER_CATEGORIA --> INT_ESCOLHER_PROBLEMA: escolher Internet
+    ESCOLHER_CATEGORIA --> IMP_ESCOLHER_PROBLEMA: escolher Impressora
+    ESCOLHER_CATEGORIA --> LOG_ESCOLHER_PROBLEMA: escolher Login
+    
+    INT_ESCOLHER_PROBLEMA --> INT_VALIDACAO_PADRAO: informar problema
+    INT_VALIDACAO_PADRAO --> INT_DESPEDIDA: concluir procedimentos
+    INT_DESPEDIDA --> FINALIZAR: SIM
+    INT_DESPEDIDA --> NUMERO_SUPORTE: NÃO
+    
+    IMP_ESCOLHER_PROBLEMA --> IMP_VALIDACAO_PADRAO: informar problema
+    IMP_VALIDACAO_PADRAO --> IMP_DESPEDIDA: concluir procedimentos
+    IMP_DESPEDIDA --> FINALIZAR: SIM
+    IMP_DESPEDIDA --> NUMERO_SUPORTE: NÃO
+    
+    LOG_ESCOLHER_PROBLEMA --> LOG_VALIDACAO_PADRAO: informar problema
+    LOG_VALIDACAO_PADRAO --> LOG_DESPEDIDA: concluir procedimentos
+    LOG_DESPEDIDA --> FINALIZAR: SIM
+    LOG_DESPEDIDA --> NUMERO_SUPORTE: NÃO
+    
+    FINALIZAR --> [*]
+    NUMERO_SUPORTE --> [*]
+```
+
 ## 🔍 Diagrama de Estados
 Neste diagrama está contida a interação homem-máquina que define o funcionamento do chatbot.
 
