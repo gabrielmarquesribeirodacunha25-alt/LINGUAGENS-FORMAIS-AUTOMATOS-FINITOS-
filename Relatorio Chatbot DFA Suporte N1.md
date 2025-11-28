@@ -98,7 +98,7 @@ stateDiagram-v2
 **(FIM)**
 
 
-### Código em Java
+## Código em Java
 
 ```java
 // ChatbotSuporteTecnicoDFA.java
@@ -309,3 +309,33 @@ public class ChatbotSuporteTecnicoDFA {
 ```
 
 ---
+
+## Limitações do DFA em Chatbots
+
+Embora um Autômato Finito Determinístico (DFA) seja útil para estruturar fluxos simples de interação, ele apresenta algumas limitações importantes:
+
+### 1. Vocabulário Fixo
+- O DFA depende de entradas pré-definidas.
+- Se o usuário digitar algo fora do conjunto esperado, o sistema não sabe como reagir.
+- Isso reduz a flexibilidade e a naturalidade da conversa.
+
+### 2. Ausência de Memória Longa
+- O DFA não armazena contexto histórico além do estado atual.
+- Não é possível lembrar interações anteriores ou preferências do usuário.
+- Limita a capacidade de oferecer personalização ou respostas contextuais.
+
+### 3. Escalabilidade Reduzida
+- Para cada nova funcionalidade, é necessário adicionar novos estados e transições.
+- Em sistemas complexos, isso gera um grafo muito grande e difícil de manter.
+
+### 4. Falta de Inteligência Semântica
+- O DFA não entende significado ou intenção.
+- Ele apenas segue regras rígidas, sem capacidade de interpretar linguagem natural.
+
+### 5. Dificuldade em Gerenciar Ambiguidade
+- Perguntas abertas ou respostas inesperadas não são tratadas.
+- O chatbot pode travar ou retornar mensagens genéricas.
+
+---
+
+
