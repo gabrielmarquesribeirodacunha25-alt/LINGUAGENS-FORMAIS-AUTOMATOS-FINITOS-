@@ -1,5 +1,5 @@
 
-# Chatbot de Pedidos de Pizza com Autômato Finito Determinístico (DFA)
+# Chatbot de Suporte Basico com Autômato Finito Determinístico (DFA)
 
 ## 🎯 Objetivo
 Demonstrar estados, transições e ações usando um DFA que guia o usuário da saudação até a identificação e solução primária do seu problema técnico (Internet, Impressora ou Login no 365) e finalização.
