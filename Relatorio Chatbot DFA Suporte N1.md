@@ -338,4 +338,27 @@ Embora um Autômato Finito Determinístico (DFA) seja útil para estruturar flux
 
 ---
 
+## Extensões para Melhorar o DFA
+
+O DFA é bom para fluxos simples, mas podemos melhorar usando algumas ideias:
+
+### 1. Usar NFA (Autômato Finito Não Determinístico)
+- Diferente do DFA, o NFA permite **mais de uma transição para o mesmo símbolo**.
+- Isso ajuda quando o usuário pode responder de várias formas para a mesma pergunta.
+- Exemplo: aceitar "sim", "claro", "ok" como respostas positivas sem criar muitos estados.
+
+### 2. Expressões Regulares (Regex)
+- Podemos usar regex para **reconhecer padrões de texto**.
+- Exemplo: detectar números de telefone, e-mails ou palavras-chave sem precisar criar um estado para cada caso.
+- Isso deixa o chatbot mais flexível para entradas variadas.
+
+### 3. Integração com NLP Simbólico
+- NLP simbólico usa **regras linguísticas** para entender frases.
+- Podemos combinar com o DFA para interpretar intenções simples.
+- Exemplo: se o usuário escreve "minha internet está lenta", o sistema entende que é problema de Internet, mesmo sem seguir o fluxo exato.
+
+---
+
+Essas extensões tornam o chatbot mais inteligente sem precisar usar redes neurais ou modelos complexos.
+
 
