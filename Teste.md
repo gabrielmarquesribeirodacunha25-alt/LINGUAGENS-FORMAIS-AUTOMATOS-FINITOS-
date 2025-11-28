@@ -35,11 +35,6 @@ stateDiagram-v2
     NUMERO_SUPORTE --> [*]
 ```
 
-## 🔍 Diagrama de Estados
-Neste diagrama está contida a interação homem-máquina que define o funcionamento do chatbot.
-
-!Diagrama de Estados
-
 ---
 
 ## 📊 Tabela de Estados e Transições
